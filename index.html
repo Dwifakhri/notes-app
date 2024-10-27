@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Notes app</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="nav">
+        <div class="content">
+          <h2>Notes App</h2>
+        </div>
+      </nav>
+      <main>
+        <div class="container-grid">
+          <card-note></card-note>
+          <card-note></card-note>
+          <card-note></card-note>
+          <card-note></card-note>
+          <card-note></card-note>
+          <form-note id="form"></form-note>
+          <div class="plus">
+            <div id="btnAdd">
+              <img
+                src="/assets/icon-plus.svg"
+                alt="plus"
+                height="40"
+                width="40" />
+              <h3>Add note</h3>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

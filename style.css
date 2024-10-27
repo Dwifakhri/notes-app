@@ -1,0 +1,129 @@
+:root {
+  --bg: #f4f6ff;
+  --primary: #ffda54;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  background: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+nav {
+  background-color: #000;
+}
+
+nav .content {
+  background: none;
+  display: flex;
+  padding: 2rem;
+}
+
+nav h2 {
+  color: var(--primary);
+  background: none;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 25px;
+}
+
+@media (max-width: 600px) {
+  .container-grid {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 920px) {
+  .container-grid {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+.card {
+  margin-top: 10px;
+  background-color: var(--primary);
+  padding: 20px;
+  height: 200px;
+}
+
+.plus {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.plus div {
+  text-align: center;
+}
+
+.plus div:hover {
+  opacity: 0.85;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-control label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-control label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-control input,
+.form-control textarea {
+  border-radius: 4px;
+  padding: 5px 8px;
+  border: 1px solid;
+  resize: none;
+  height: 100%;
+}
+
+.btn-wrap {
+  text-align: end;
+}
+
+button {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.btn-cancel {
+  background: rgb(234, 73, 73);
+}
+
+.btn-confirm {
+  background: rgb(73, 76, 234);
+}
