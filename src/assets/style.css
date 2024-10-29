@@ -31,7 +31,7 @@ nav {
 nav .content {
   background: none;
   display: flex;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
 }
 
 nav h2 {
@@ -41,27 +41,56 @@ nav h2 {
 
 .container-grid {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, 1fr);
   gap: 25px;
 }
 
 @media (max-width: 600px) {
   .container-grid {
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media (min-width: 600px) and (max-width: 920px) {
   .container-grid {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header #title {
+    max-width: 200px;
   }
 }
 
-.card {
+@media (min-width: 920px) and (max-width: 1300px) {
+  .header #title {
+    max-width: 200px;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
   margin-top: 10px;
+  padding: 5px;
+  border: #000 2px solid;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.info p {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  gap: 5px;
+}
+
+.card {
   background-color: var(--primary);
-  padding: 20px;
+  padding: 15px;
   height: 200px;
+  border: #000 2px solid;
 }
 
 .plus {
@@ -104,15 +133,15 @@ nav h2 {
   height: 100%;
 }
 
-/* input:focus-visible,
+input:focus-visible,
 textarea:focus-visible {
   appearance: none;
   outline: none;
   box-shadow: 0 0 0 4px rgb(30, 144, 255, 0.5);
-} */
+}
 
-/* input:user-invalid,
-textarea:user-invalid, */
+input:user-invalid,
+textarea:user-invalid,
 .invalid {
   appearance: none;
   outline: none;
@@ -148,4 +177,15 @@ button:hover {
   color: rgb(234, 73, 73);
   font-size: 12px;
   margin-top: 5px;
+}
+
+.header #title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+
+.archieve {
+  font-weight: 600;
+  margin-bottom: 5px;
 }

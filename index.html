@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/assets/style.css" />
+    <link
+      rel="shortcut icon"
+      href="src/assets/icon-note.png"
+      type="image/png" />
     <title>Notes app</title>
   </head>
   <body>
     <div class="container">
-      <nav id="nav">
-        <div class="content">
-          <h2>Notes App</h2>
-        </div>
-      </nav>
+      <nav-bar></nav-bar>
       <main>
         <div class="container-grid">
           <form-note id="form"></form-note>
@@ -28,6 +28,7 @@
           </div>
         </div>
       </main>
+      <footer-bar></footer-bar>
     </div>
     <script type="module" src="src/app.js"></script>
   </body>
