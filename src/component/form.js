@@ -4,7 +4,8 @@ class form extends HTMLElement {
     this.innerHTML = `<form>
             <div class="form-control">
               <label for="title">Title</label>
-              <input id="title" type="text" name="title" />
+              <input id="title" type="text" name="title" required/>
+              <p id="invalid-title" class="invalid-fb"></p>
             </div>
             <div class="form-control">
               <label for="description">Description</label>
@@ -12,7 +13,9 @@ class form extends HTMLElement {
                 id="description"
                 type="text"
                 name="description"
-                rows="6"></textarea>
+                rows="6"
+                required></textarea>
+                <p id="invalid-textarea" class="invalid-fb"></p>
             </div>
             <div class="btn-wrap">
               <button id="btnCancel" class="btn-cancel" type="button">Cancel</button>

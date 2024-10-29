@@ -104,6 +104,21 @@ nav h2 {
   height: 100%;
 }
 
+/* input:focus-visible,
+textarea:focus-visible {
+  appearance: none;
+  outline: none;
+  box-shadow: 0 0 0 4px rgb(30, 144, 255, 0.5);
+} */
+
+/* input:user-invalid,
+textarea:user-invalid, */
+.invalid {
+  appearance: none;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(244, 86, 86, 0.5) !important;
+}
+
 .btn-wrap {
   text-align: end;
 }
@@ -126,4 +141,11 @@ button:hover {
 
 .btn-confirm {
   background: rgb(73, 76, 234);
+}
+
+.invalid-fb {
+  display: none;
+  color: rgb(234, 73, 73);
+  font-size: 12px;
+  margin-top: 5px;
 }
